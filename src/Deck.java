@@ -4,7 +4,7 @@ public class Deck {
 
     public Deck() {
             for (int i = 0; i < 52; i++) {
-                System.out.println();
+
             }
     }
 }
