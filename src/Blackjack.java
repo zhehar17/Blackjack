@@ -8,4 +8,8 @@ public class Blackjack {
         this.numPlayers = numPlayers;
     }  
     
+    public void play() {
+
+    }
+
 }

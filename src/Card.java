@@ -1,8 +1,8 @@
 public class Card {
     private String suit;
-    private char type;
+    private String type;
     
-    public Card(String suit, char type) {
+    public Card(String suit, String type) {
         this.suit = suit;
         this.type = type;
     }
@@ -15,11 +15,11 @@ public class Card {
         this.suit = suit;
     }
 
-    public char getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(char type) {
+    public void setType(String type) {
         this.type = type;
     }
 }
