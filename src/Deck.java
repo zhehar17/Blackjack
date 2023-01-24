@@ -5,6 +5,9 @@ public class Deck {
     private static final String[] suits = {"Hearts", "Spades", "Clubs", "Diamonds"};
     private static final String[] types = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
     
+    /**
+     * Initializes deck and fullDeck
+     */
     public Deck() {
         for (int i = 0; i < suits.length; i++) {
             for (int j = 0; j < types.length; j++) {
