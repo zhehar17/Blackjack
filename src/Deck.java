@@ -9,6 +9,7 @@ public class Deck {
      * Initializes deck and fullDeck
      */
     public Deck() {
+        deck = new ArrayList<Card>();
         for (int i = 0; i < suits.length; i++) {
             for (int j = 0; j < types.length; j++) {
                 deck.add(new Card(suits[i], types[j]));        
@@ -16,6 +17,20 @@ public class Deck {
         }
         for (int i = 0; i < fullDeck.length; i++) {
             fullDeck[i] = deck.get(i);
+        }
+    }
+
+    public static Card drawCard() {
+        int random = (int) Math.random() * 52;
+        return deck.remove(random);
+    }
+    
+    public static void restoreDeck() {
+        while (deck.size() > 0) {
+            deck.remove(0);
+        }
+        for (int i = 0; i < fullDeck.length; i++) {
+            deck.add(fullDeck[i]);
         }
     }
 }
