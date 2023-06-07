@@ -8,8 +8,10 @@ public class Blackjack {
         this.numPlayers = numPlayers;
     }  
     
-    public void play() {
-
+    public void setup() {
+        for(int i = 0; i < numPlayers; i++) {
+            
+        }
     }
 
 }

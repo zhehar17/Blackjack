@@ -15,13 +15,12 @@ public class Hand {
 
     public void drawCard() {
         cards.add(Deck.drawCard());
-        int numAces = 0;
+        numCards++;
         for (int i = 0; i < cards.size(); i++) {
             if (cards.get(i).getType().equals("Ace")) {
                 numAces ++;
             }
         }
-        this.numAces = numAces;
     }
 
     public boolean bust() {
@@ -42,6 +41,7 @@ public class Hand {
         handValue = value;
         while (bust() && numAces != 0) {
             handValue -= 10;
+            numAces--;
         }
     }
 
